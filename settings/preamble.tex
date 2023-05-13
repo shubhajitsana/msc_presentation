@@ -1,0 +1,100 @@
+%-------------------------------- preamble.tex ------------------------------------------
+\graphicspath{{gfx/}}
+
+%=================================== Packages ==============================================
+\usepackage[T1]{fontenc}
+\usepackage{ragged2e}\justifying
+\usepackage{txfonts}
+\usepackage{booktabs}
+\usepackage{natbib}
+\usepackage{bibentry}
+\usepackage{appendixnumberbeamer}
+\usepackage{pifont}
+\usepackage{fontawesome}
+\usepackage{textpos}
+\usepackage{media9}
+\usepackage{tikz}
+%\usepackage{multirow}
+\usepackage{multicol}
+%\usepackage{amsmath}
+\usepackage[compat=1.1.0]{tikz-feynman}
+
+%=================================== Themes ==============================================
+\usetheme{EastLansing}
+\useoutertheme[footline=authortitle,subsection=false]{miniframes} % Alternatively: miniframes, infolines, split
+% \useinnertheme{circles}
+\usefonttheme{serif}
+%========================= Beamer color/font/template ==================================== 
+\definecolor{UBCblue}{rgb}{0.04706, 0.13725, 0.26667} % UBC Blue (primary)
+\definecolor{UBCgrey}{rgb}{0.3686, 0.5255, 0.6235} % UBC Grey (secondary)
+\definecolor{sviolet}{rgb}{0.3, 0.08, 0.8235}
+% % ===============================================================
+
+% Override palette coloring with secondary
+
+% \setbeamercolor{palette primary}{bg=red,fg=white}
+% \setbeamercolor{palette secondary}{bg=violet,fg=white}
+% \setbeamercolor{palette tertiary}{bg=sviolet,fg=white}
+\setbeamercolor{section in head/foot}{bg=sviolet,fg=white}
+% \setbeamercolor{palette quaternary}{bg=red,fg=white}
+\setbeamercolor{subsection in head/foot}{bg=sviolet,fg=white}
+
+% \setbeamercolor{structure}{fg=UBCblue} % itemize, enumerate, etc
+
+\setbeamercolor{section in toc}{fg=sviolet} % TOC sections
+% color of title and frame title 
+\setbeamercolor{title}{bg=sviolet,fg=white}
+\setbeamercolor{frametitle}{fg=UBCblue}
+
+\setbeamercolor{author}{fg=blue}
+\setbeamercolor{institute}{fg=blue} 
+\setbeamercolor{author in head/foot}{bg=green!50!blue}
+\setbeamercolor{title in head/foot}{bg=blue!70!white}
+\setbeamercolor{frametitle}{fg=sviolet,bg=blue!10!white}
+% ===============================================================
+
+ 
+\setbeamersize{text margin left=12mm, text margin right=12mm} 
+\setbeamertemplate{frametitle}[default][left, leftskip=5mm] 
+\setbeamertemplate{frametitle continuation}{\frametitle{References}}
+\setbeamertemplate{bibliography item}[text] 
+\setbeamertemplate{page number in head/foot}[appendixframenumber]
+\setbeamertemplate{navigation symbols}{} %hides navigation buttons at bottom
+% \setbeamertemplate{headline}{} %hides navigation bar at top
+
+
+\setbeamercovered{transparent}
+% \setbeamercovered{invisible}
+
+\setbeamertemplate{footline}{%
+	\leavevmode\bfseries 	
+	\begin{beamercolorbox}[wd=0.5\paperwidth, ht=7pt, dp=2.5pt, center]{author in head/foot}
+	\insertshortauthor%~(\insertshortinstitute)
+	\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=0.5\paperwidth, ht=7pt, dp=2.5pt, center]{title in head/foot}
+	\insertshorttitle
+	\end{beamercolorbox}%
+}
+
+\setbeamertemplate{frametitle}[default][left, leftskip=2mm] 
+\setbeamertemplate{frametitle continuation}{\frametitle{References}}
+% \setbeamerfont{frametitle}{series=\bfseries}
+\setbeamertemplate{frametitle}{%	
+	\nointerlineskip		
+	\begin{beamercolorbox}[wd=\paperwidth, ht=5.4mm, dp=2.5mm]{frametitle}
+	\hskip3mm
+	\insertframetitle	
+	\end{beamercolorbox}%   
+}
+\addtobeamertemplate{frametitle}{}{%
+	\begin{textblock*}{100mm}(0.95\linewidth, -7.7mm)
+		\includegraphics[height=7.4mm, width=7.4mm]{logo1}	
+		\includegraphics[height=7.4mm, width=7.4mm]{logo2}
+	\end{textblock*}
+}
+%=================================== Others ==============================================
+\setlength{\parskip}{5pt}
+
+\let\oldbib\bibentry
+\renewcommand{\bibentry}[1]{{\tiny[\oldbib{#1}]}}
+%=========================End Preamble======================================

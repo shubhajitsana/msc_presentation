@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{SuperKEKB Accelerator}{3}{0}{1}
+\beamer@sectionintoc {2}{Belle II detector}{4}{0}{2}
+\beamer@sectionintoc {3}{Full Event Interpretation}{5}{0}{3}
+\beamer@sectionintoc {4}{Motivation}{8}{0}{4}
+\beamer@sectionintoc {5}{Analysis}{9}{0}{5}
