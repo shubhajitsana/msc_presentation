@@ -228,26 +228,22 @@
 %--------------------------------------------------------------------------
 \section[Analysis]{Analysis}
 %--------------------------------------------------------------------------
-\begin{frame}[t]{Formalism $\&$ Approach}
+\begin{frame}[t]{Cuts}
 	\begin{scriptsize}
 	\begin{itemize}
-		\item The BF measurements are based on the following equations:
-		%\end{itemize}
+		% \item The BF measurements are based on the following equations:
 		% $$
-		% \begin{gathered}
-		% 	\mathcal{B} = \dfrac{N_{selected}}{2 f_{\pm} N_{B\bar{B}}\epsilon}\\
-		% \end{gathered}
+		% 	\mathcal{B}(\mathrm{B}^{+} \rightarrow \bar{\mathrm{D}}^{0}\pi^{+}\pi^{-}\pi^{+}) 
+		% 	= \frac{N_{sig}}{2 \cdot \varepsilon \cdot \mathcal{L} \cdot \sigma_{B^+B^-} \cdot 
+		% 	\mathcal{B}(\bar{\rm D}^0 \rightarrow K^{+} \pi^{-})}
 		% $$
-		\begin{gathered}
-			\mathcal{B}(\mathrm{B}^{+} \rightarrow \bar{\mathrm{D}}^{0}\pi^{+}\pi^{-}\pi^{+}) = \frac{N_{sig}}{2 \cdot \varepsilon \cdot \mathscr{L} \cdot \sigma_{B^+B^-} \cdot \mathcal{B}(\bar{\rm D}^0 \rightarrow K^{+} \pi^{-})}
-		\end{gathered}
-		\item Data Set: MC14ri$\_$a inclusive MC (100 $fb^{-1}$)
-		\item \textbf{Track selection:}
+		\item Data Set: MC15ri$\_$a inclusive MC (200 $fb^{-1}$)
+		\item \textbf{Object selection:}
 		\begin{itemize}
 			\begin{scriptsize}
-			\item Transverse impact parameter $\vert$d0$\vert$ < 0.2 cm.
-			\item Longitudinal impact parameter $\vert$z0$\vert$ < 1 cm.
-			\item Polar angle $\to$ 0 < $\theta$ < 126.87: cosTheta >= -0.6 
+			\item Transverse impact parameter $\vert$d0$\vert$ < 0.2 cm.%eliminate poorly-reconstructed tracks that do not originate from the IP region
+			\item Longitudinal impact parameter $\vert$z0$\vert$ < 1 cm.%eliminate poorly-reconstructed tracks that do not originate from the IP region
+			\item Polar angle $\to$ 0 < $\theta$ < 126.87: $\cos\theta$ >= -0.6% remove backward tracks (outside the PID sub-detectors)
 			\end{scriptsize}
 		\end{itemize}
 		\item Selection on kinematic variables:
@@ -262,6 +258,110 @@
 	\end{itemize}
 	\end{scriptsize}
 \end{frame}
+
+\begin{frame}[t]{M$_{bc}$}
+\begin{scriptsize}
+			\begin{columns}
+		\column{0.5\textwidth}
+		\begin{figure}
+			\includegraphics[height = 5 cm, width = 6cm]{Mbc_all.png}
+			\caption{Plotting M$_{bc}$ for different profile}
+		\end{figure}
+		
+		\column{0.5\textwidth}
+		\begin{figure}
+			\includegraphics[height = 5 cm, width = 6cm]{Mbc_sig.png}
+			\caption{Plotting M$_{bc}$ for Truth Matched(TM) events}
+		\end{figure}
+		
+	\end{columns}
+\end{scriptsize}
+\end{frame}
+
+\begin{frame}[t]{Delta E}
+	\begin{scriptsize}
+		\begin{columns}
+			\column{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[height = 5 cm, width = 6cm]{de_all.png}
+				\caption{Plotting $\bigtriangleup$E for different profile}
+			\end{figure}
+			
+			\column{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[height = 5 cm, width = 6cm]{de_sig.png}
+				\caption{Plotting $\bigtriangleup$E for Truth Matched(TM) events}
+			\end{figure}
+			
+		\end{columns}
+	\end{scriptsize}
+\end{frame}
+
+\begin{frame}{}                                                                           
+	\begin{figure}
+		% \centering
+		\includegraphics{PID_bin_kaon_pion.pdf}
+		% \caption{Distribution of $\mathcal{L}(K \mid \pi)$ for charged kaon and pion tracks in the signal MC sample}
+		% \label{fig:binary_pid_kpi}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{}                                                                           
+	\begin{figure}
+		% \centering
+		\includegraphics{fom_plot_kid_thesis_channel_07_266_29.png}
+		% \caption{Distribution of $S/\sqrt{S+B}$ for PID selection optimization for kaon tracks originating from $\bar{\mathrm{D}}^{0}$}
+		% \label{fig:binary_pid_fom}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{}                                                                           
+
+\end{frame}
+
+\begin{frame}{}                                                                           
+
+\end{frame}
+
+\begin{frame}{}                                                                           
+
+\end{frame}
+
+\begin{frame}{}                                                                           
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \begin{frame}{Continuum Suppression}	
 \vspace{-0.05 in}
@@ -303,43 +403,6 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}[t]{M$_{bc}$}
-\begin{scriptsize}
-			\begin{columns}
-		\column{0.5\textwidth}
-		\begin{figure}
-			\includegraphics[height = 5 cm, width = 6cm]{Mbc_all.png}
-			\caption{Plotting M$_{bc}$ for different set}
-		\end{figure}
-		
-		\column{0.5\textwidth}
-		\begin{figure}
-			\includegraphics[height = 5 cm, width = 6cm]{Mbc_sig.png}
-			\caption{Plotting M$_{bc}$ for signal}
-		\end{figure}
-		
-	\end{columns}
-\end{scriptsize}
-\end{frame}
-
-\begin{frame}[t]{Delta E}
-	\begin{scriptsize}
-		\begin{columns}
-			\column{0.5\textwidth}
-			\begin{figure}
-				\includegraphics[height = 5 cm, width = 6cm]{de_all.png}
-				\caption{Plotting $\bigtriangleup$E for different set}
-			\end{figure}
-			
-			\column{0.5\textwidth}
-			\begin{figure}
-				\includegraphics[height = 5 cm, width = 6cm]{de_sig.png}
-				\caption{Plotting $\bigtriangleup$E for signal}
-			\end{figure}
-			
-		\end{columns}
-	\end{scriptsize}
-\end{frame}
 
 \begin{frame}[t]{R2}
 

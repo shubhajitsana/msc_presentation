@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.30)  13 MAY 2023 15:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.30)  13 MAY 2023 16:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1119,12 +1119,12 @@ LaTeX Font Info:    Trying to load font information for U+txsyc on input line 36
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-<gfx//logo1.png, id=31, 1204.5pt x 1204.5pt>
+<gfx//logo1.png, id=37, 1204.5pt x 1204.5pt>
 File: gfx//logo1.png Graphic file (type png)
 <use gfx//logo1.png>
 Package pdftex.def Info: gfx//logo1.png  used on input line 36.
 (pdftex.def)             Requested size: 48.17178pt x 48.17178pt.
-<gfx//logo2.png, id=33, 642.4pt x 521.95pt>
+<gfx//logo2.png, id=39, 642.4pt x 521.95pt>
 File: gfx//logo2.png Graphic file (type png)
 <use gfx//logo2.png>
 Package pdftex.def Info: gfx//logo2.png  used on input line 36.
@@ -1146,7 +1146,7 @@ Package pdftex.def Info: gfx//logo2.png  used on input line 45.
 ]
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <8> not available
 (Font)              Font shape `T1/txr/bx/n' tried instead on input line 79.
-<gfx//skekb.jpg, id=87, 752.8125pt x 533.74406pt>
+<gfx//skekb.jpg, id=105, 752.8125pt x 533.74406pt>
 File: gfx//skekb.jpg Graphic file (type jpg)
 <use gfx//skekb.jpg>
 Package pdftex.def Info: gfx//skekb.jpg  used on input line 79.
@@ -1167,7 +1167,7 @@ Package pdftex.def Info: gfx//logo2.png  used on input line 79.
 [3
 
  <./gfx//skekb.jpg>]
-<gfx//Belle2.png, id=112, 722.7pt x 542.025pt>
+<gfx//Belle2.png, id=136, 722.7pt x 542.025pt>
 File: gfx//Belle2.png Graphic file (type png)
 <use gfx//Belle2.png>
 Package pdftex.def Info: gfx//Belle2.png  used on input line 116.
@@ -1188,7 +1188,7 @@ Package pdftex.def Info: gfx//logo2.png  used on input line 116.
 [4
 
  <./gfx//Belle2.png>]
-<gfx//tag.png, id=138, 1112.65688pt x 512.66531pt>
+<gfx//tag.png, id=168, 1112.65688pt x 512.66531pt>
 File: gfx//tag.png Graphic file (type png)
 <use gfx//tag.png>
 Package pdftex.def Info: gfx//tag.png  used on input line 145.
@@ -1198,7 +1198,7 @@ Overfull \hbox (22.75694pt too wide) in paragraph at lines 145--145
  [] 
  []
 
-<gfx//infer.png, id=139, 1008.76875pt x 477.785pt>
+<gfx//infer.png, id=169, 1008.76875pt x 477.785pt>
 File: gfx//infer.png Graphic file (type png)
 <use gfx//infer.png>
 Package pdftex.def Info: gfx//infer.png  used on input line 145.
@@ -1218,7 +1218,7 @@ Overfull \vbox (7.5927pt too high) detected at line 145
 [5
 
  <./gfx//tag.png> <./gfx//infer.png>]
-<gfx//hierarchy.png, id=167, 910.15031pt x 575.90157pt>
+<gfx//hierarchy.png, id=203, 910.15031pt x 575.90157pt>
 File: gfx//hierarchy.png Graphic file (type png)
 <use gfx//hierarchy.png>
 Package pdftex.def Info: gfx//hierarchy.png  used on input line 168.
@@ -1239,7 +1239,7 @@ Package pdftex.def Info: gfx//logo2.png  used on input line 168.
 [6
 
  <./gfx//hierarchy.png>]
-<gfx//bdt.png, id=192, 716.6775pt x 475.7775pt>
+<gfx//bdt.png, id=234, 716.6775pt x 475.7775pt>
 File: gfx//bdt.png Graphic file (type png)
 <use gfx//bdt.png>
 Package pdftex.def Info: gfx//bdt.png  used on input line 196.
@@ -1264,7 +1264,7 @@ Overfull \vbox (3.11401pt too high) detected at line 196
 [7
 
  <./gfx//bdt.png>]
-<gfx//v.png, id=218, 546.04pt x 240.9pt>
+<gfx//v.png, id=266, 546.04pt x 240.9pt>
 File: gfx//v.png Graphic file (type png)
 <use gfx//v.png>
 Package pdftex.def Info: gfx//v.png  used on input line 227.
@@ -1280,243 +1280,247 @@ Package pdftex.def Info: gfx//logo2.png  used on input line 227.
  [8
 
  <./gfx//v.png>]
-
-/home/sana/ssana/final_presentation/branching_f.tex:264: Package amsmath Error: \begin{gathered} allowed only in math mode.
-
-See the amsmath package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.264 \end{frame}
-                 
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-/home/sana/ssana/final_presentation/branching_f.tex:264: Missing $ inserted.
-<inserted text> 
-                $
-l.264 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/sana/ssana/final_presentation/branching_f.tex:264: Undefined control sequence.
-<argument> 2 \cdot \varepsilon \cdot \mathscr 
-                                              {L} \cdot \sigma _{B^+B^-} \cd...
-l.264 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/sana/ssana/final_presentation/branching_f.tex:264: Missing $ inserted.
-<inserted text> 
-                $
-l.264 \end{frame}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
 File: gfx//logo1.png Graphic file (type png)
 <use gfx//logo1.png>
-Package pdftex.def Info: gfx//logo1.png  used on input line 264.
+Package pdftex.def Info: gfx//logo1.png  used on input line 260.
 (pdftex.def)             Requested size: 21.04414pt x 21.04414pt.
 File: gfx//logo2.png Graphic file (type png)
 <use gfx//logo2.png>
-Package pdftex.def Info: gfx//logo2.png  used on input line 264.
+Package pdftex.def Info: gfx//logo2.png  used on input line 260.
 (pdftex.def)             Requested size: 21.04536pt x 21.04965pt.
-[9
+ [9
 
 ]
-<gfx//r2_v3.png, id=270, 771.88374pt x 173.64874pt>
-File: gfx//r2_v3.png Graphic file (type png)
-<use gfx//r2_v3.png>
-Package pdftex.def Info: gfx//r2_v3.png  used on input line 304.
-(pdftex.def)             Requested size: 199.16928pt x 44.8058pt.
-<gfx//R2.pdf, id=271, 569.12625pt x 569.12625pt>
-File: gfx//R2.pdf Graphic file (type pdf)
-<use gfx//R2.pdf>
-Package pdftex.def Info: gfx//R2.pdf  used on input line 304.
-(pdftex.def)             Requested size: 170.71652pt x 170.71313pt.
-
-Overfull \hbox (22.76215pt too wide) in paragraph at lines 304--304
- [] 
- []
-
-<gfx//cs2.png, id=272, 297.11pt x 279.0425pt>
-File: gfx//cs2.png Graphic file (type png)
-<use gfx//cs2.png>
-Package pdftex.def Info: gfx//cs2.png  used on input line 304.
-(pdftex.def)             Requested size: 71.13104pt x 71.13147pt.
-<gfx//cs3.png, id=273, 305.14pt x 275.0275pt>
-File: gfx//cs3.png Graphic file (type png)
-<use gfx//cs3.png>
-Package pdftex.def Info: gfx//cs3.png  used on input line 304.
-(pdftex.def)             Requested size: 71.13055pt x 71.13196pt.
-
-Overfull \hbox (18.30725pt too wide) in paragraph at lines 304--304
- [] 
- []
-
-File: gfx//logo1.png Graphic file (type png)
-<use gfx//logo1.png>
-Package pdftex.def Info: gfx//logo1.png  used on input line 304.
-(pdftex.def)             Requested size: 21.04414pt x 21.04414pt.
-File: gfx//logo2.png Graphic file (type png)
-<use gfx//logo2.png>
-Package pdftex.def Info: gfx//logo2.png  used on input line 304.
-(pdftex.def)             Requested size: 21.04536pt x 21.04965pt.
-
-Overfull \vbox (14.95058pt too high) detected at line 304
- []
-
-[10
-
- <./gfx//r2_v3.png> <./gfx//R2.pdf> <./gfx//cs2.png> <./gfx//cs3.png>]
-<gfx//Mbc_all.png, id=341, 700.6175pt x 476.78125pt>
+<gfx//Mbc_all.png, id=331, 700.6175pt x 476.78125pt>
 File: gfx//Mbc_all.png Graphic file (type png)
 <use gfx//Mbc_all.png>
-Package pdftex.def Info: gfx//Mbc_all.png  used on input line 323.
+Package pdftex.def Info: gfx//Mbc_all.png  used on input line 279.
 (pdftex.def)             Requested size: 170.71736pt x 142.26431pt.
 
-Overfull \hbox (22.76299pt too wide) in paragraph at lines 323--323
+Overfull \hbox (22.76299pt too wide) in paragraph at lines 279--279
  [] 
  []
 
-<gfx//Mbc_sig.png, id=342, 700.6175pt x 476.78125pt>
+<gfx//Mbc_sig.png, id=332, 700.6175pt x 476.78125pt>
 File: gfx//Mbc_sig.png Graphic file (type png)
 <use gfx//Mbc_sig.png>
-Package pdftex.def Info: gfx//Mbc_sig.png  used on input line 323.
+Package pdftex.def Info: gfx//Mbc_sig.png  used on input line 279.
 (pdftex.def)             Requested size: 170.71736pt x 142.26431pt.
 
-Overfull \hbox (22.76299pt too wide) in paragraph at lines 323--323
+Overfull \hbox (22.76299pt too wide) in paragraph at lines 279--279
  [] 
  []
 
 File: gfx//logo1.png Graphic file (type png)
 <use gfx//logo1.png>
-Package pdftex.def Info: gfx//logo1.png  used on input line 323.
+Package pdftex.def Info: gfx//logo1.png  used on input line 279.
 (pdftex.def)             Requested size: 21.04414pt x 21.04414pt.
 File: gfx//logo2.png Graphic file (type png)
 <use gfx//logo2.png>
-Package pdftex.def Info: gfx//logo2.png  used on input line 323.
+Package pdftex.def Info: gfx//logo2.png  used on input line 279.
+(pdftex.def)             Requested size: 21.04536pt x 21.04965pt.
+[10
+
+ <./gfx//Mbc_all.png> <./gfx//Mbc_sig.png>]
+<gfx//de_all.png, id=362, 700.6175pt x 476.78125pt>
+File: gfx//de_all.png Graphic file (type png)
+<use gfx//de_all.png>
+Package pdftex.def Info: gfx//de_all.png  used on input line 298.
+(pdftex.def)             Requested size: 170.71736pt x 142.26431pt.
+
+Overfull \hbox (22.76299pt too wide) in paragraph at lines 298--298
+ [] 
+ []
+
+<gfx//de_sig.png, id=363, 700.6175pt x 476.78125pt>
+File: gfx//de_sig.png Graphic file (type png)
+<use gfx//de_sig.png>
+Package pdftex.def Info: gfx//de_sig.png  used on input line 298.
+(pdftex.def)             Requested size: 170.71736pt x 142.26431pt.
+
+Overfull \hbox (22.76299pt too wide) in paragraph at lines 298--298
+ [] 
+ []
+
+File: gfx//logo1.png Graphic file (type png)
+<use gfx//logo1.png>
+Package pdftex.def Info: gfx//logo1.png  used on input line 298.
+(pdftex.def)             Requested size: 21.04414pt x 21.04414pt.
+File: gfx//logo2.png Graphic file (type png)
+<use gfx//logo2.png>
+Package pdftex.def Info: gfx//logo2.png  used on input line 298.
 (pdftex.def)             Requested size: 21.04536pt x 21.04965pt.
 [11
 
- <./gfx//Mbc_all.png> <./gfx//Mbc_sig.png>]
-<gfx//de_all.png, id=366, 700.6175pt x 476.78125pt>
-File: gfx//de_all.png Graphic file (type png)
-<use gfx//de_all.png>
-Package pdftex.def Info: gfx//de_all.png  used on input line 342.
-(pdftex.def)             Requested size: 170.71736pt x 142.26431pt.
+ <./gfx//de_all.png> <./gfx//de_sig.png>]
+<gfx//PID_bin_kaon_pion.pdf, id=394, 569.12625pt x 329.23pt>
+File: gfx//PID_bin_kaon_pion.pdf Graphic file (type pdf)
+<use gfx//PID_bin_kaon_pion.pdf>
+Package pdftex.def Info: gfx//PID_bin_kaon_pion.pdf  used on input line 307.
+(pdftex.def)             Requested size: 569.12486pt x 329.22919pt.
 
-Overfull \hbox (22.76299pt too wide) in paragraph at lines 342--342
+Overfull \hbox (273.2161pt too wide) in paragraph at lines 307--307
  [] 
  []
 
-<gfx//de_sig.png, id=367, 700.6175pt x 476.78125pt>
-File: gfx//de_sig.png Graphic file (type png)
-<use gfx//de_sig.png>
-Package pdftex.def Info: gfx//de_sig.png  used on input line 342.
-(pdftex.def)             Requested size: 170.71736pt x 142.26431pt.
 
-Overfull \hbox (22.76299pt too wide) in paragraph at lines 342--342
- [] 
+Overfull \vbox (109.20428pt too high) detected at line 307
  []
 
-File: gfx//logo1.png Graphic file (type png)
-<use gfx//logo1.png>
-Package pdftex.def Info: gfx//logo1.png  used on input line 342.
-(pdftex.def)             Requested size: 21.04414pt x 21.04414pt.
-File: gfx//logo2.png Graphic file (type png)
-<use gfx//logo2.png>
-Package pdftex.def Info: gfx//logo2.png  used on input line 342.
-(pdftex.def)             Requested size: 21.04536pt x 21.04965pt.
 [12
 
- <./gfx//de_all.png> <./gfx//de_sig.png>]
-<gfx//R2_all.png, id=391, 700.6175pt x 476.78125pt>
-File: gfx//R2_all.png Graphic file (type png)
-<use gfx//R2_all.png>
-Package pdftex.def Info: gfx//R2_all.png  used on input line 364.
-(pdftex.def)             Requested size: 213.39403pt x 170.71718pt.
+ <./gfx//PID_bin_kaon_pion.pdf, page is rotated 90 degrees>]
 
-Overfull \hbox (6.2588pt too wide) in paragraph at lines 364--364
+LaTeX Warning: File `fom_plot_kid_thesis_channel_07_266_29.png' not found on input line 316.
+
+
+/home/sana/ssana/final_presentation/branching_f.tex:316: Package pdftex.def Error: File `fom_plot_kid_thesis_channel_07_266_29.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.316 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Trying to load font information for T1+txtt on input line 316.
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txtt.fd
+File: t1txtt.fd 2000/12/15 v3.1
+) [13
+
+] [14
+
+] [15
+
+] [16
+
+] [17
+
+]
+<gfx//r2_v3.png, id=615, 771.88374pt x 173.64874pt>
+File: gfx//r2_v3.png Graphic file (type png)
+<use gfx//r2_v3.png>
+Package pdftex.def Info: gfx//r2_v3.png  used on input line 404.
+(pdftex.def)             Requested size: 199.16928pt x 44.8058pt.
+<gfx//R2.pdf, id=616, 569.12625pt x 569.12625pt>
+File: gfx//R2.pdf Graphic file (type pdf)
+<use gfx//R2.pdf>
+Package pdftex.def Info: gfx//R2.pdf  used on input line 404.
+(pdftex.def)             Requested size: 170.71652pt x 170.71313pt.
+
+Overfull \hbox (22.76215pt too wide) in paragraph at lines 404--404
  [] 
  []
 
-<gfx//importance.png, id=392, 403.5075pt x 952.55875pt>
-File: gfx//importance.png Graphic file (type png)
-<use gfx//importance.png>
-Package pdftex.def Info: gfx//importance.png  used on input line 364.
-(pdftex.def)             Requested size: 113.81252pt x 199.17114pt.
+<gfx//cs2.png, id=617, 297.11pt x 279.0425pt>
+File: gfx//cs2.png Graphic file (type png)
+<use gfx//cs2.png>
+Package pdftex.def Info: gfx//cs2.png  used on input line 404.
+(pdftex.def)             Requested size: 71.13104pt x 71.13147pt.
+<gfx//cs3.png, id=618, 305.14pt x 275.0275pt>
+File: gfx//cs3.png Graphic file (type png)
+<use gfx//cs3.png>
+Package pdftex.def Info: gfx//cs3.png  used on input line 404.
+(pdftex.def)             Requested size: 71.13055pt x 71.13196pt.
 
-Overfull \hbox (25.03899pt too wide) in paragraph at lines 364--364
+Overfull \hbox (18.30725pt too wide) in paragraph at lines 404--404
  [] 
  []
 
 File: gfx//logo1.png Graphic file (type png)
 <use gfx//logo1.png>
-Package pdftex.def Info: gfx//logo1.png  used on input line 364.
+Package pdftex.def Info: gfx//logo1.png  used on input line 404.
 (pdftex.def)             Requested size: 21.04414pt x 21.04414pt.
 File: gfx//logo2.png Graphic file (type png)
 <use gfx//logo2.png>
-Package pdftex.def Info: gfx//logo2.png  used on input line 364.
+Package pdftex.def Info: gfx//logo2.png  used on input line 404.
 (pdftex.def)             Requested size: 21.04536pt x 21.04965pt.
-[13
+
+Overfull \vbox (14.95058pt too high) detected at line 404
+ []
+
+[18
+
+ <./gfx//r2_v3.png> <./gfx//R2.pdf> <./gfx//cs2.png> <./gfx//cs3.png>]
+<gfx//R2_all.png, id=692, 700.6175pt x 476.78125pt>
+File: gfx//R2_all.png Graphic file (type png)
+<use gfx//R2_all.png>
+Package pdftex.def Info: gfx//R2_all.png  used on input line 427.
+(pdftex.def)             Requested size: 213.39403pt x 170.71718pt.
+
+Overfull \hbox (6.2588pt too wide) in paragraph at lines 427--427
+ [] 
+ []
+
+<gfx//importance.png, id=693, 403.5075pt x 952.55875pt>
+File: gfx//importance.png Graphic file (type png)
+<use gfx//importance.png>
+Package pdftex.def Info: gfx//importance.png  used on input line 427.
+(pdftex.def)             Requested size: 113.81252pt x 199.17114pt.
+
+Overfull \hbox (25.03899pt too wide) in paragraph at lines 427--427
+ [] 
+ []
+
+File: gfx//logo1.png Graphic file (type png)
+<use gfx//logo1.png>
+Package pdftex.def Info: gfx//logo1.png  used on input line 427.
+(pdftex.def)             Requested size: 21.04414pt x 21.04414pt.
+File: gfx//logo2.png Graphic file (type png)
+<use gfx//logo2.png>
+Package pdftex.def Info: gfx//logo2.png  used on input line 427.
+(pdftex.def)             Requested size: 21.04536pt x 21.04965pt.
+[19
 
  <./gfx//R2_all.png> <./gfx//importance.png>]
-<gfx//bdt_r2.pdf, id=419, 2312.64pt x 1300.86pt>
+<gfx//bdt_r2.pdf, id=725, 2312.64pt x 1300.86pt>
 File: gfx//bdt_r2.pdf Graphic file (type pdf)
 <use gfx//bdt_r2.pdf>
-Package pdftex.def Info: gfx//bdt_r2.pdf  used on input line 389.
+Package pdftex.def Info: gfx//bdt_r2.pdf  used on input line 452.
 (pdftex.def)             Requested size: 270.27078pt x 170.70569pt.
 File: gfx//logo1.png Graphic file (type png)
 <use gfx//logo1.png>
-Package pdftex.def Info: gfx//logo1.png  used on input line 389.
+Package pdftex.def Info: gfx//logo1.png  used on input line 452.
 (pdftex.def)             Requested size: 21.04414pt x 21.04414pt.
 File: gfx//logo2.png Graphic file (type png)
 <use gfx//logo2.png>
-Package pdftex.def Info: gfx//logo2.png  used on input line 389.
+Package pdftex.def Info: gfx//logo2.png  used on input line 452.
 (pdftex.def)             Requested size: 21.04536pt x 21.04965pt.
- [14
+ [20
 
  <./gfx//bdt_r2.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 414.
+(hyperref)                removing `\translate ' on input line 477.
 
 File: gfx//logo1.png Graphic file (type png)
 <use gfx//logo1.png>
-Package pdftex.def Info: gfx//logo1.png  used on input line 426.
+Package pdftex.def Info: gfx//logo1.png  used on input line 489.
 (pdftex.def)             Requested size: 21.04414pt x 21.04414pt.
 File: gfx//logo2.png Graphic file (type png)
 <use gfx//logo2.png>
-Package pdftex.def Info: gfx//logo2.png  used on input line 426.
+Package pdftex.def Info: gfx//logo2.png  used on input line 489.
 (pdftex.def)             Requested size: 21.04536pt x 21.04965pt.
-[15
+[21
 
 ]
-<gfx//thankyou.png, id=505, 532.99126pt x 175.65625pt>
+<gfx//thankyou.png, id=818, 532.99126pt x 175.65625pt>
 File: gfx//thankyou.png Graphic file (type png)
 <use gfx//thankyou.png>
-Package pdftex.def Info: gfx//thankyou.png  used on input line 430.
+Package pdftex.def Info: gfx//thankyou.png  used on input line 493.
 (pdftex.def)             Requested size: 319.79723pt x 105.39455pt.
 
-Overfull \hbox (23.88846pt too wide) in paragraph at lines 430--430
+Overfull \hbox (23.88846pt too wide) in paragraph at lines 493--493
 [][] 
  []
 
-[16
+[22
 
- <./gfx//thankyou.png>] [17
+ <./gfx//thankyou.png>] [23
 
-] [18
+] [24
 
 ]
 \tf@nav=\write6
@@ -1539,18 +1543,18 @@ Package rerunfilecheck Info: Checksums for `branching_f.out':
 (rerunfilecheck)             After:  7426DC0888F38BC69D0512E86EEECFCB;716.
  ) 
 Here is how much of TeX's memory you used:
- 32354 strings out of 478287
- 663946 string characters out of 5849288
- 928138 words of memory out of 5000000
- 49785 multiletter control sequences out of 15000+600000
- 549013 words of font info for 162 fonts, out of 8000000 for 9000
+ 32459 strings out of 478287
+ 666538 string characters out of 5849288
+ 930567 words of memory out of 5000000
+ 49863 multiletter control sequences out of 15000+600000
+ 548019 words of font info for 161 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,19n,122p,455b,780s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on branching_f.pdf (18 pages, 2336049 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on branching_f.pdf (24 pages, 2363018 bytes).
 PDF statistics:
- 586 PDF objects out of 1000 (max. 8388607)
- 427 compressed objects within 5 object streams
- 43 named destinations out of 1000 (max. 500000)
- 154 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 905 PDF objects out of 1000 (max. 8388607)
+ 703 compressed objects within 8 object streams
+ 55 named destinations out of 1000 (max. 500000)
+ 159 words of extra memory for PDF output out of 10000 (max. 10000000)
 
