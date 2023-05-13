@@ -228,7 +228,7 @@
 %--------------------------------------------------------------------------
 \section[Analysis]{Analysis}
 %--------------------------------------------------------------------------
-\begin{frame}[t]{Cuts}
+\begin{frame}[t]{Selection Cuts}
 	\begin{scriptsize}
 	\begin{itemize}
 		% \item The BF measurements are based on the following equations:
@@ -250,8 +250,8 @@
 		\begin{itemize}
 			\begin{scriptsize}
 			\item Mass of $D^{0}$ meson: 1.84 < M < 1.89 GeV/c$ ^{2} $
-			\item Beam constrained mass ($M_{bc}$) > 5.27 GeV/c$ ^{2} $, defined as $ M_{\rm bc} = \sqrt{E_{\rm beam}^{2} - (\Sigma \overrightarrow{p_{i}})^{2}}$
-			\item Beam-energy Difference $ \vert \Delta E \vert <$ 0.15 GeV, defined as $ \Delta E = \Sigma E_{i} - E_{\rm beam} $.
+			\item Beam constrained mass 5.23 GeV/c$ ^{2} $ < ($M_{bc}$) < 5.29 GeV/c$ ^{2} $, defined as $ M_{\rm bc} = \sqrt{E_{\rm beam}^{2} - (\Sigma \overrightarrow{p_{i}})^{2}}.$
+			\item Beam-energy Difference $ \vert \Delta E \vert <$ 0.1 GeV, defined as $ \Delta E = \Sigma E_{i} - E_{\rm beam} $.
 			\end{scriptsize}			
 		\end{itemize}
 		
@@ -259,109 +259,215 @@
 	\end{scriptsize}
 \end{frame}
 
-\begin{frame}[t]{M$_{bc}$}
+\begin{frame}[t]{Plotting M$_{bc}$}
 \begin{scriptsize}
 			\begin{columns}
 		\column{0.5\textwidth}
 		\begin{figure}
-			\includegraphics[height = 5 cm, width = 6cm]{Mbc_all.png}
-			\caption{Plotting M$_{bc}$ for different profile}
+			\includegraphics[height = 5 cm, width = 6cm]{Mbc_bkg.jpg}
+			\caption{For background}
 		\end{figure}
 		
 		\column{0.5\textwidth}
 		\begin{figure}
-			\includegraphics[height = 5 cm, width = 6cm]{Mbc_sig.png}
-			\caption{Plotting M$_{bc}$ for Truth Matched(TM) events}
+			\includegraphics[height = 5 cm, width = 6cm]{Mbc_sig.pdf}
+			\caption{For Truth Matched(TM) events}
 		\end{figure}
 		
 	\end{columns}
 \end{scriptsize}
 \end{frame}
 
-\begin{frame}[t]{Delta E}
+\begin{frame}[t]{Plotting $\Delta E$}
 	\begin{scriptsize}
 		\begin{columns}
 			\column{0.5\textwidth}
 			\begin{figure}
-				\includegraphics[height = 5 cm, width = 6cm]{de_all.png}
-				\caption{Plotting $\bigtriangleup$E for different profile}
+				\includegraphics[height = 5 cm, width = 6cm]{deltaE_bkg.jpg}
+				\caption{For background}
 			\end{figure}
 			
 			\column{0.5\textwidth}
 			\begin{figure}
-				\includegraphics[height = 5 cm, width = 6cm]{de_sig.png}
-				\caption{Plotting $\bigtriangleup$E for Truth Matched(TM) events}
+				\includegraphics[height = 5 cm, width = 6cm]{deltaE_sig.pdf}
+				\caption{For Truth Matched(TM) events}
 			\end{figure}
 			
 		\end{columns}
 	\end{scriptsize}
 \end{frame}
 
-\begin{frame}{}                                                                           
+\begin{frame}{$\mathcal{L}(K \mid \pi)$}                                                                           
 	\begin{figure}
-		% \centering
-		\includegraphics{PID_bin_kaon_pion.pdf}
-		% \caption{Distribution of $\mathcal{L}(K \mid \pi)$ for charged kaon and pion tracks in the signal MC sample}
-		% \label{fig:binary_pid_kpi}
+		\centering
+		\includegraphics[width=\textwidth]{PID_bin_kaon_pion.pdf}
+		\caption{Distribution of $\mathcal{L}(K \mid \pi)$ for charged kaon and pion tracks in the signal MC sample.}
+		\label{fig:binary_pid_kpi}
 	\end{figure}
 \end{frame}
 
-\begin{frame}{}                                                                           
+\begin{frame}{Figure of Merit}                                                                           
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{fom_plot_kid_thesis_channel_07_266_29.png}
+		\caption{Distribution of $S/\sqrt{S+B}$ for PID selection optimization for kaon tracks originating from $\bar{\mathrm{D}}^{0}$}
+		\label{fig:binary_pid_fom}
+	\end{figure}
+\end{frame}
+\begin{frame}[t]{Selection Cuts}
+	\begin{scriptsize}
+	\begin{itemize}
+		% \item Data Set: MC15ri$\_$a inclusive MC (200 $fb^{-1}$)
+		\item \textbf{Object selection:}
+		\begin{itemize}
+			\begin{scriptsize}
+			\item Transverse impact parameter $\vert$d0$\vert$ < 0.2 cm.%eliminate poorly-reconstructed tracks that do not originate from the IP region
+			\item Longitudinal impact parameter $\vert$z0$\vert$ < 1 cm.%eliminate poorly-reconstructed tracks that do not originate from the IP region
+			\item Polar angle $\to$ 0 < $\theta$ < 126.87: $\cos\theta$ >= -0.6.% remove backward tracks (outside the PID sub-detectors)
+			\item \textcolor{red}{Binary likelihood, $\mathcal{L}(K \mid \pi)$ > 0.6.}
+		\end{scriptsize}
+		\end{itemize}
+		\item Selection on kinematic variables:
+		\begin{itemize}
+			\begin{scriptsize}
+			\item Mass of $D^{0}$ meson: 1.84 < M < 1.89 GeV/c$ ^{2} $
+			\item Beam constrained mass 5.23 GeV/c$ ^{2} $ < ($M_{bc}$) < 5.29 GeV/c$ ^{2} $, defined as $ M_{\rm bc} = \sqrt{E_{\rm beam}^{2} - (\Sigma \overrightarrow{p_{i}})^{2}}.$
+			\item Beam-energy Difference $ \vert \Delta E \vert <$ 0.1 GeV, defined as $ \Delta E = \Sigma E_{i} - E_{\rm beam} $.
+			\end{scriptsize}			
+		\end{itemize}
+	\end{itemize}
+	\end{scriptsize}
+\end{frame}
+
+\begin{frame}{Mass of $\bar{\mathrm{D}}^{0}$}                                                                           
 	\begin{figure}
 		% \centering
-		\includegraphics{fom_plot_kid_thesis_channel_07_266_29.png}
-		% \caption{Distribution of $S/\sqrt{S+B}$ for PID selection optimization for kaon tracks originating from $\bar{\mathrm{D}}^{0}$}
-		% \label{fig:binary_pid_fom}
+		\vspace{-0.8cm}
+		% \hspace{-2.1cm}
+		\includegraphics[width=1.1\textwidth]{mD_fit_presentation.png}
+		\caption{Fitting invariant mass of daughter particles $(\rm{K}^+, \pi^-)$ of $\bar{\mathrm{D}}^{0}$}
+		\label{fig:d0_mass_fit}
+	\end{figure}
+\end{frame}
+\begin{frame}[t]{Selection Cuts}
+	\begin{scriptsize}
+	\begin{itemize}
+		% \item Data Set: MC15ri$\_$a inclusive MC (200 $fb^{-1}$)
+		\item \textbf{Object selection:}
+		\begin{itemize}
+			\begin{scriptsize}
+			\item Transverse impact parameter $\vert$d0$\vert$ < 0.2 cm.%eliminate poorly-reconstructed tracks that do not originate from the IP region
+			\item Longitudinal impact parameter $\vert$z0$\vert$ < 1 cm.%eliminate poorly-reconstructed tracks that do not originate from the IP region
+			\item Polar angle $\to$ 0 < $\theta$ < 126.87: $\cos\theta$ >= -0.6.% remove backward tracks (outside the PID sub-detectors)
+			\item Binary likelihood, $\mathcal{L}(K \mid \pi)$ > 0.6.
+		\end{scriptsize}
+		\end{itemize}
+		\item Selection on kinematic variables:
+		\begin{itemize}
+			\begin{scriptsize}
+			\item \textcolor{red}{Mass of $D^{0}$ meson: 1.855 < M < 1.874 GeV/c$ ^{2}.$}
+			\item Beam constrained mass 5.23 GeV/c$ ^{2} $ < ($M_{bc}$) < 5.29 GeV/c$ ^{2} $, defined as $ M_{\rm bc} = \sqrt{E_{\rm beam}^{2} - (\Sigma \overrightarrow{p_{i}})^{2}}.$
+			\item Beam-energy Difference $ \vert \Delta E \vert <$ 0.1 GeV, defined as $ \Delta E = \Sigma E_{i} - E_{\rm beam} $.
+			\end{scriptsize}			
+		\end{itemize}
+	\end{itemize}
+	\end{scriptsize}
+\end{frame}
+
+\begin{frame}{Topological analysis of TM events}                                                                           
+	\begin{figure}
+		\centering
+		% \hspace{-1cm}
+		\vspace{-0.6cm}\includegraphics[width=1.1\textwidth]{topoana.png}
 	\end{figure}
 \end{frame}
 
-\begin{frame}{}                                                                           
+\begin{frame}{Distribution of the invariant mass}                                                                           
+	\begin{minipage}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{D_10D_md.pdf}
+	  \end{minipage}\hfill
+	  \begin{minipage}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{D_s_InvM.pdf}
+	  \end{minipage}\\[1em]
+	  \begin{minipage}[b]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{InvM2ndand3rdpi.pdf}
+	  \end{minipage}\hfill
+	  \begin{minipage}[b]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{InvMD0and2ndpi.pdf}
+	  \end{minipage}
+\end{frame}
+
+\begin{frame}{Distribution of the invariant mass}                                                                           
+	\begin{minipage}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{InvM1stand2ndpi_sc.jpg}
+	  \end{minipage}\hfill
+	  \begin{minipage}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{InvM2ndand3rdpi_sc.jpg}
+	  \end{minipage}\\[-0.5em]
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\textwidth]{DstrminusroeD_md_mixed.pdf}
+		% \caption{Distributin of mass difference between $D^{*-}$, reconstructed
+		% from $\bar{D}^{0}$ of signal side and $\pi$ of ROE side, and $\bar{D}^{0}$}
+		% \label{fig:peaking_bkg_roe}
+	\end{figure}
 
 \end{frame}
 
-\begin{frame}{}                                                                           
-
+\begin{frame}{Different veto cuts and their efficiencies}
+	\begin{scriptsize}
+	\begin{itemize}
+		% \item Data Set: MC15ri$\_$a inclusive MC (200 $fb^{-1}$)
+		\item \textbf{Object selection:}
+		\begin{itemize}
+			\begin{scriptsize}
+			\item Transverse impact parameter $\vert$d0$\vert$ < 0.2 cm.%eliminate poorly-reconstructed tracks that do not originate from the IP region
+			\item Longitudinal impact parameter $\vert$z0$\vert$ < 1 cm.%eliminate poorly-reconstructed tracks that do not originate from the IP region
+			\item Polar angle $\to$ 0 < $\theta$ < 126.87: $\cos\theta$ >= -0.6.% remove backward tracks (outside the PID sub-detectors)
+			\item Binary likelihood, $\mathcal{L}(K \mid \pi)$ > 0.6.
+		\end{scriptsize}
+		\end{itemize}
+		\item Selection on kinematic variables:
+		\begin{itemize}
+			\begin{scriptsize}
+			\item Mass of $D^{0}$ meson: 1.855 < M < 1.874 GeV/c$ ^{2}.$
+			\item Beam constrained mass \textcolor{red}{5.27 GeV/c$ ^{2} $ < ($M_{bc}$) < 5.29 GeV/c$ ^{2}$}, defined as $ M_{\rm bc} = \sqrt{E_{\rm beam}^{2} - (\Sigma \overrightarrow{p_{i}})^{2}}.$
+			\item Beam-energy Difference $ \vert \Delta E \vert <$ 0.1 GeV, defined as $ \Delta E = \Sigma E_{i} - E_{\rm beam} $.
+			\end{scriptsize}			
+		\end{itemize}
+	\end{itemize}
+	\end{scriptsize}
+	\begin{table}[htbp]
+		\centering
+		% \caption{Different veto cuts and their efficiencies.}
+		\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Variable name & Veto region (GeV/c$^{2}$) & Efficiency (\%)\\
+			\hline
+			Invariant mass of three charged $\pi$ & (1.95769 - 1.97872) & 98.52 \\
+			\hline
+			Invariant mass of one charged $\pi$ and $\bar{D}^{0}$ & (2.00837 - 2.01217) & 91.35 \\
+			\hline
+			Mass difference of $\bar{D}^{0}_{1}$ and $\bar{D}^{0}$ & (0.492200 - 0.632197) & 96.75 \\
+			\hline
+			Invariant mass of two oppositely charged $\pi$($1^{st}$ and $2^{nd}$) & (0.488814 - 0.506173) & 99.08 \\
+			\hline
+			Invariant mass of two oppositely charged $\pi$($2^{nd}$ and $3^{rd}$) & (0.48987 - 0.504896) & 98.83 \\
+			\hline
+			Mass difference of $D^{*-}$ and $\bar{D}^{0}$ & (0.143913 - 0.146967) & 97.32 \\
+			\hline
+		\end{tabular}%
+		}
+		\label{tab:veto}
+	\end{table}
 \end{frame}
-
-\begin{frame}{}                                                                           
-
-\end{frame}
-
-\begin{frame}{}                                                                           
-
-\end{frame}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 \begin{frame}{Continuum Suppression}	
 \vspace{-0.05 in}
@@ -380,7 +486,7 @@
 \begin{columns}
 	\column{0.5\textwidth}
 	\begin{figure}
-		\includegraphics[width = 6cm]{R2.pdf}
+		\includegraphics[width = 6cm]{R2_from_colaboration.pdf}
 	\end{figure}
 	
 	\column{0.5\textwidth}
@@ -403,52 +509,294 @@
 \end{columns}
 \end{frame}
 
+\begin{frame}{Distribution of R2, $H_{02}^{so}$, $E_t$ and 
+	$H_{12}^{so}$}                                                                           
+	\begin{minipage}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{R2.pdf}
+	  \end{minipage}\hfill
+	  \begin{minipage}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{KSFWVariables__bohso02__bc.pdf}
+	  \end{minipage}\\[1em]
+	  \begin{minipage}[b]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{KSFWVariables__boet__bc.jpg}
+	  \end{minipage}\hfill
+	  \begin{minipage}[b]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{KSFWVariables__bohso12__bc.pdf}
+	  \end{minipage}
+\end{frame}
 
-\begin{frame}[t]{R2}
+\begin{frame}{Distribution of $T_{\rm signal}$, $\cos\theta_{\rm CMS}$, 
+	$\left|\cos\theta_{B}^{\rm ROE}\right|$ and
+	$\left|\cos\theta_{\rm T,Bz}\right|$}                                                                           
+	\begin{minipage}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{thrustBm.pdf}
+	  \end{minipage}\hfill
+	  \begin{minipage}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{CMS_cosTheta.pdf}
+	  \end{minipage}\\[1em]
+	  \begin{minipage}[b]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{cosTBTO.pdf}
+	  \end{minipage}\hfill
+	  \begin{minipage}[b]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{cosTBz.pdf}
+	  \end{minipage}
+\end{frame}
 
-			\begin{columns}
-			\column{0.7\textwidth}
-				\begin{figure}
-				\vspace{-1cm}
-				\includegraphics[height = 6 cm, width = 7.5cm]{R2_all.png}
-				\caption{Plotting R2 for different set}
-				\end{figure}			
-			\column{0.3\textwidth}
-			\begin{figure}
-				\vspace{-0.8cm}
-				\includegraphics[height = 7 cm, width = 4cm]{importance.png}
-				%\vspace{-0.8cm}
-				%\fontsize{5pt}{5pt}\selectfont
-				%\hspace{length}
-				%\caption{Importance of different variables to predict continuum event}
-			\end{figure}
-		\end{columns}
+\begin{frame}{Distribution of $\Delta z$ and |$q\cdot r$|}                                                                           
+	\begin{minipage}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{DeltaZ.jpg}
+	  \end{minipage}\hfill
+	  \begin{minipage}[t]{0.45\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{abs_qr.pdf}
+	  \end{minipage}\\[1em]
+	%   \begin{minipage}[b]{0.45\textwidth}
+	% 	\centering
+	% 	\includegraphics[width=\textwidth]{cosTBTO.pdf}
+	%   \end{minipage}\hfill
+	%   \begin{minipage}[b]{0.45\textwidth}
+	% 	\centering
+	% 	\includegraphics[width=\textwidth]{cosTBz.pdf}
+	%   \end{minipage}
+\end{frame}
+
+\begin{frame}{Overtraining plot}                                                                           
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{fbdt_ks.png}
+        % \caption{Overtraining plot}
+        % \label{fig:fbdt_ks}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Classifier output}                                                                           
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{SigProb_3profile_sigprob36_mbc2729.jpg}
+        % \caption{FBDT output (C)}
+        % \label{fig:cs_fbdt}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{FoM analysis of FBDT output}                                                                           
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.9\textwidth]{fom_plot_theses.png}
+        % \caption{FoM analysis of FBDT output}
+        % \label{fig:cs_fom}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Selection cuts}
+	\vspace{-0.5cm}
+	\begin{scriptsize}
+	\begin{itemize}
+		% \item Data Set: MC15ri$\_$a inclusive MC (200 $fb^{-1}$)
+		\item \textbf{Object selection:}
+		\begin{itemize}
+			\begin{scriptsize}
+			\item Transverse impact parameter $\vert$d0$\vert$ < 0.2 cm.%eliminate poorly-reconstructed tracks that do not originate from the IP region
+			\item Longitudinal impact parameter $\vert$z0$\vert$ < 1 cm.%eliminate poorly-reconstructed tracks that do not originate from the IP region
+			\item Polar angle $\to$ 0 < $\theta$ < 126.87: $\cos\theta$ >= -0.6.% remove backward tracks (outside the PID sub-detectors)
+			\item Binary likelihood, $\mathcal{L}(K \mid \pi)$ > 0.6.
+		\end{scriptsize}
+		\end{itemize}
+		\item Selection on kinematic variables:
+		\begin{itemize}
+			\begin{scriptsize}
+			\item Mass of $D^{0}$ meson: 1.855 < M < 1.874 GeV/c$ ^{2}.$
+			\item Beam constrained mass 5.27 GeV/c$ ^{2} $ < ($M_{bc}$) < 5.29 GeV/c$ ^{2} $, defined as $ M_{\rm bc} = \sqrt{E_{\rm beam}^{2} - (\Sigma \overrightarrow{p_{i}})^{2}}.$
+			\item Beam-energy Difference $ \vert \Delta E \vert <$ 0.1 GeV, defined as $ \Delta E = \Sigma E_{i} - E_{\rm beam} $.
+			\end{scriptsize}			
+		\end{itemize}
+		\item Selection on Classifier output:
+		\begin{itemize}
+			\begin{scriptsize}
+			\item \textcolor{red}{Classifier output(C) > 0.36.}
+			\end{scriptsize}			
+		\end{itemize}
+	\end{itemize}
+	\end{scriptsize}
+	\vspace{-0.5cm}
+	\begin{table}[htbp]
+		\centering
+		% \caption{Different veto cuts and their efficiencies.}
+		\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Variable name & Veto region (GeV/c$^{2}$) & Efficiency (\%)\\
+			\hline
+			Invariant mass of three charged $\pi$ & (1.95769 - 1.97872) & 98.52 \\
+			\hline
+			Invariant mass of one charged $\pi$ and $\bar{D}^{0}$ & (2.00837 - 2.01217) & 91.35 \\
+			\hline
+			Mass difference of $\bar{D}^{0}_{1}$ and $\bar{D}^{0}$ & (0.492200 - 0.632197) & 96.75 \\
+			\hline
+			Invariant mass of two oppositely charged $\pi$($1^{st}$ and $2^{nd}$) & (0.488814 - 0.506173) & 99.08 \\
+			\hline
+			Invariant mass of two oppositely charged $\pi$($2^{nd}$ and $3^{rd}$) & (0.48987 - 0.504896) & 98.83 \\
+			\hline
+			Mass difference of $D^{*-}$ and $\bar{D}^{0}$ & (0.143913 - 0.146967) & 97.32 \\
+			\hline
+		\end{tabular}%
+		}
+		\label{tab:veto}
+	\end{table}
+\end{frame}
+
+
+\begin{frame}{Multiplicity distribution}  
+	\begin{itemize}
+		\begin{scriptsize}
+		\item The $\chi^{2}$ metric of $M_{bc}$ and $M_{D^{0}}$, defined as 
+		$$\left(\frac{M_{bc} - M_{B}^{\rm PDF}}{\sigma_{M_{bc}}} \right)^{2} + 
+		\left(\frac{M_{D^{0}} - M_{D^{0}}^{\rm PDF}}{\sigma_{M_{D^{0}}}} \right)^{2}$$
+		is used for the single-candidate selection (SCS).
+		\end{scriptsize}			
+	\end{itemize}
+	\begin{minipage}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{multiplicity.pdf}
+	  \end{minipage}\hfill
+	  \begin{minipage}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{N_cand.pdf}
+	  \end{minipage}\\%[1em]
+	  \begin{itemize}
+		\begin{scriptsize}
+		\item 	The signal efficiencies obtained after applying all the selection 
+		criteria and single-candidate selection is \textbf{21.77\%}.
+		\end{scriptsize}			
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Yield Measurement}   
+	\vspace{-1cm}                                                                        
+	\begin{figure}
+		\centering
+		\includegraphics[width=1.2\textwidth]{de_fit_semi_data_using2G_2.png}
+		% \caption{$\Delta \rm{E}$ fit of Signal events.}
+		% \label{fig:defit_signal}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Yield Measurement}   
+	\vspace{-1cm}                                                                        
+	\begin{figure}[t]
+		\centering
+		\includegraphics[width=1.2\textwidth]{de_fit_all_using2G_2.png}
+		% \caption{$\Delta \rm{E}$ fit of all events.}
+		% \label{fig:defit_all}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}{Results}                                                                           
+	\begin{table}[htbp]
+		\centering
+		% \caption{Fit parameter information of $\Delta \rm{E}$ distribution of MC sample.
+		% The parameters $\mu_{1,2}$ and $\sigma_{1,2}$ represent the mean and width 
+		% of first and second Gaussians, respectively. The parameter $f$ represents the 
+		% weight of first Gaussian and $f_{\Delta \rm{E}}$ represent the fudge factor.
+		% parameter $b_{0}$ represents the free parameter of Chebyshev polynomial.}
+		% \resizebox{\textwidth}{!}{%
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Component & Parameter & Value \\
+			\hline
+			Signal & $\mu_{1}$ & $(-0.175 \pm 0.054) \times 10^{-3}$ GeV \\
+			 & $\mu_{2}$ & $(-12.61 \pm 0.68) \times 10^{-3}$ GeV \\
+			 & $\sigma_{1}$ & $(6.486 \pm 0.051) \times 10^{-3}$ GeV \\
+			 & $\sigma_{2}$ & $(35.79 \pm 0.60) \times 10^{-3}$ GeV \\
+			 & $f$ & 0.836 $\pm$ 0.004 \\
+			 \hline
+			 Background & $b_{0}$ & -0.259 $\pm$ 0.010 \\
+			 \hline
+			Scale Factor & $f_{\Delta \rm{E}}$ & 0.976 $\pm$ 0.009 \\
+			 \hline
+		\end{tabular}%
+		% }
+		\label{tab:fit_result}
+	\end{table}
+	\begin{itemize}
+		\begin{scriptsize}
+		\item The yield of signal events was determined to be \textbf{21632~$\pm$~207}.
+		\item The measured value of the branching ratio for the decay channel 
+		$\mathrm{B}^{+} \rightarrow \bar{\mathrm{D}}^{0}\pi^{+}\pi^{-}\pi^{+}$ 
+		is \textbf{(11.1 $\pm$ 0.1) $\times$ 10$^{-3}$} 
+		which is consistent with the figure specified in the decay file used for the
+		production of generic Monte Carlo (MC) data.
+		\end{scriptsize}			
+	\end{itemize}
+\end{frame}
+
+% \begin{frame}{Predicted invariant mass from ${}_s\mathcal{P}\textit{lot}$}
+% 	\begin{minipage}[t]{0.5\textwidth}
+% 		\centering
+% 		\includegraphics[width=\textwidth]{splot_sig_bkg_3pi.png}
+% 	  \end{minipage}\hfill
+% 	  \begin{minipage}[t]{0.5\textwidth}
+% 		\centering
+% 		\includegraphics[width=\textwidth]{splot_sig_bkg_23pi.png}
+% 	\end{minipage}\\[1em]                                                                       
+% 	% \begin{figure}
+% 	% 	\centering
+% 	% 	\begin{subfigure}[b]{\textwidth}
+% 	% 		\includegraphics[width=\textwidth]{splot_sig_bkg_3pi.png}
+% 	% 		\caption{ }
+% 	% 	\end{subfigure}
+% 	% 	\hfill
+% 	% 	\begin{subfigure}[b]{\textwidth}
+% 	% 		\includegraphics[width=\textwidth]{splot_sig_bkg_23pi.png}
+% 	% 		\caption{ }
+% 	% 	\end{subfigure}
+% 	% 	% \caption{Comparison of predicted invariant mass distribution 
+% 	% 	% of a) three charged $\pi$ and b) two $\pi$ of signal 
+% 	% 	% events with original distribution.}
+% 	% 	% \label{fig:splot}
+% 	% \end{figure}
+% \end{frame}
+
+\begin{frame}{Predicted invariant mass from ${}_s\mathcal{P}\textit{lot}$}                                                                           
+	\includegraphics[width=1.2\textwidth]{splot_sig_bkg_3pi.png}
+\end{frame}
+
+\begin{frame}{Predicted invariant mass from ${}_s\mathcal{P}\textit{lot}$}                                                                           
+	\includegraphics[width=1.2\textwidth]{splot_sig_bkg_23pi.png}
+\end{frame}
+
+\begin{frame}{Predicted invariant mass from ${}_s\mathcal{P}\textit{lot}$}                                                                           
+	\includegraphics[width=1.2\textwidth]{splot_sig_bkg_12pi.png}
+\end{frame}
+
+% \begin{frame}{Result}  
+% 	\begin{itemize}
+% 		\begin{scriptsize}
+% 		% \item $$
+% 		% \mathcal{B}\left(\mathrm{B}^{+} \rightarrow \bar{\mathrm{D}}^{0}\pi^{+}\pi^{-}\pi^{+}\right)
+% 		% =\frac{N_{sig}}{2 \cdot \varepsilon \cdot \mathcal{L} \cdot \sigma_{B^+B^-} \cdot \mathcal{B}\left(\bar{\rm D}^0 \rightarrow K^{+} \pi^{-}\right)}.
+% 		% $$
+% 		\item $$\mathcal{B}\left(\mathrm{B}^{+} \rightarrow \bar{\mathrm{D}}^{0}\pi^{+}\pi^{-}\pi^{+}\right) = 0.0111.$$
+% 		with 1.83\% uncertainity.
+% 	\end{scriptsize}			
+% \end{itemize}
+% \end{frame}
+
+\begin{frame}{}                                                                           
 
 \end{frame}
 
-\begin{frame}[t]{FBDT output of R2 variable}
+\begin{frame}{}                                                                           
 
-	\vspace{-0.3cm}
-			%\begin{figure}
-				\hspace{-0.1cm} 
-				\includegraphics[height = 6 cm, width = 9.5cm]{bdt_r2.pdf}
-				%\caption{MVC algorithm with Hierarchal approach}
-			%\end{figure}
-	\begin{scriptsize}
-		\vspace{-0.6cm}
-		\begin{itemize}
-			\item Future plan:
-
-				%\vspace{-0.5cm}
-				\begin{itemize}
-								\begin{scriptsize}
-					\item Train FBDT in various way to get better cuts for continuum suppression.
-					\item Finding all B$\bar{\rm B}$ mesons using Hadronic and Semileptonic tag in FEI.
-								\end{scriptsize}
-				\end{itemize}
-
-		\end{itemize}
-	\end{scriptsize}
 \end{frame}
 
 %--------------------------------------------------------------------------
